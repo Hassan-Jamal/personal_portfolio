@@ -13,9 +13,22 @@ const Encryption = () => {
             >
                 Performance
                 <span className='text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500' >
-                    
+                {" "}
+                &{" "}
                 </span>
+                Security
             </motion.div>
+        </div>
+        <div className='flex flex-col items-center justify-center translate-y-[-50px] absolute z-[20] w-auto h-auto ' >
+            <div className='flex flex-col items-center group cursor-pointer w-auto h-auto ' >
+                <Image
+                src="LockTop.png"
+                alt="Lock top"
+                width={50}
+                height={50}
+                className="translate-y-5 transition-all duration-200 group-hove:translate-y-11"
+                />
+            </div>
         </div>
       
     </div>
