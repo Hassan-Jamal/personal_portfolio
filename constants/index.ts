@@ -160,12 +160,6 @@ export const Skill_data = [
       height: 80,
     },
     {
-      skill_name: "Type Script",
-      Image: "/ts.png",
-      width: 80,
-      height: 80,
-    },
-    {
       skill_name: "AI",
       Image: "/ai.svg",
       width: 80,

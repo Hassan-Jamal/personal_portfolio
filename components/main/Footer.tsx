@@ -6,69 +6,106 @@ import {
   RxTwitterLogo,
   RxLinkedinLogo,
 } from "react-icons/rx";
-
 import { FaYoutube } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <div className="w-full h-full bg-transparent text-gray-200 shadow-lg p-[15px] ">
-        <div className="w-full flex flex-col items-center justify-center m-auto">
-            <div className="w-full h-full flex flex-row items-center justify-around flex-wrap">
-                
-
-                <div className="min-w-[200px] h-auto flex flex-col items-center justify-start">
-                    <div className="font-bold text-[16px]">Community</div>
-                    <p className="flex flex-row items-center my-[15px] cursor-pointer">
-                        <FaYoutube />
-                        <span className="text-[15px] ml-[6px]">Youtube</span>    
-                    </p>
-                    <p className="flex flex-row items-center my-[15px] cursor-pointer">
-                        <RxGithubLogo />
-                        <span className="text-[15px] ml-[6px]">Github</span>    
-                    </p>
-                    <p className="flex flex-row items-center my-[15px] cursor-pointer">
-                        <RxDiscordLogo />
-                        <span className="text-[15px] ml-[6px]">Discord</span>    
-                    </p>
-                </div>
-                <div className="min-w-[200px] h-auto flex flex-col items-center justify-start">
-                    <div className="font-bold text-[16px]">Social Media</div>
-                    <p className="flex flex-row items-center my-[15px] cursor-pointer">
-                        <FaYoutube />
-                        <span className="text-[15px] ml-[6px]">Instagram</span>    
-                    </p>
-                    <p className="flex flex-row items-center my-[15px] cursor-pointer">
-                        <RxGithubLogo />
-                        <span className="text-[15px] ml-[6px]">Twitter</span>    
-                    </p>
-                    <p className="flex flex-row items-center my-[15px] cursor-pointer">
-                        <RxDiscordLogo />
-                        <span className="text-[15px] ml-[6px]">Linkedin</span>    
-                    </p>
-                </div>
-                <div className="min-w-[200px] h-auto flex flex-col items-center justify-start">
-                    <div className="font-bold text-[16px]">About</div>
-                   <p className="flex flex-row items-center my-[15px] cursor-pointer">
-                     
-                        <span className="text-[15px] ml-[6px]">Become Sponsor</span>    
-                    </p>
-                    <p className="flex flex-row items-center my-[15px] cursor-pointer">
-                      
-                        <span className="text-[15px] ml-[6px]">Learning about me</span>    
-                    </p>
-                    <p className="flex flex-row items-center my-[15px] cursor-pointer">
-                  
-                        <span className="text-[15px] ml-[6px]">mifwebchain@gmail.com</span>    
-                    </p>
-                </div>
-            </div>
-
-            <div className="mb-[20px] text-[15px] text-center">
-                &copy; WebChain Dev 2023 Inc. All rights reserved
-            </div>
+    <div className="footer-container">
+      <div className="footer-content">
+        <div className="footer-sections">
+          <div className="footer-section">
+            <div className="footer-section-title">Community</div>
+            <a
+              href="https://www.linkedin.com/in/hassan-jamal1/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="footer-link"
+            >
+              <FaYoutube className="footer-link-icon" />
+              <span className="footer-link-text">LinkedIn</span>
+            </a>
+            <a
+              href="https://github.com/Hassan-Jamal"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="footer-link"
+            >
+              <RxGithubLogo className="footer-link-icon" />
+              <span className="footer-link-text">GitHub</span>
+            </a>
+            <a
+              href="https://www.reddit.com/user/syed_hassan_jamal/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="footer-link"
+            >
+              <RxDiscordLogo className="footer-link-icon" />
+              <span className="footer-link-text">Reddit</span>
+            </a>
+          </div>
+          <div className="footer-section">
+            <div className="footer-section-title">Social Media</div>
+            <a
+              href="https://www.facebook.com/profile.php?id=100051724837816&mibextid=ZbWKwL"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="footer-link"
+            >
+              <RxInstagramLogo className="footer-link-icon" />
+              <span className="footer-link-text">Facebook</span>
+            </a>
+            <a
+              href="https://twitter.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="footer-link"
+            >
+              <RxTwitterLogo className="footer-link-icon" />
+              <span className="footer-link-text">Twitter</span>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/hassan-jamal1/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="footer-link"
+            >
+              <RxLinkedinLogo className="footer-link-icon" />
+              <span className="footer-link-text">LinkedIn</span>
+            </a>
+          </div>
+          <div className="footer-section">
+            <div className="footer-section-title">About</div>
+            <a
+              href="https://example.com/sponsor"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="footer-link"
+            >
+              <span className="footer-link-text">Become a Sponsor</span>
+            </a>
+            <a
+              href="https://example.com/about-me"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="footer-link"
+            >
+              <span className="footer-link-text">Learn About Me</span>
+            </a>
+            <a
+              href="mailto:hassanjamal6577987@gmail.com"
+              className="footer-link"
+            >
+              <span className="footer-link-text">hassanjamal6577987@gmail.com</span>
+            </a>
+          </div>
         </div>
-    </div>
-  )
-}
 
-export default Footer
+        <div className="footer-bottom">
+          &copy; Hassan Jamal 2023 Inc. All rights reserved
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Footer;

@@ -28,37 +28,40 @@ const HeroContent = () => {
           </h1>
         </motion.div>
 
-      <motion.div
-      variants={slideInFromLeft(0.5)}
-      className="flex flex-col gap-6 mt-6 text-6xl font-bold text-white max-w-[600px] w-auto h-auto" >
-      <span>  providing 
-      <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500" > the best </span>
-      Project Experience
-      </span>
-      </motion.div>
+        <motion.div
+          variants={slideInFromLeft(0.5)}
+          className="flex flex-col gap-6 mt-6 text-6xl font-bold text-white max-w-[600px] w-auto h-auto" >
+          <span>  providing 
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500" > the best </span>
+            Project Experience
+          </span>
+        </motion.div>
 
-      <motion.p 
-      variants={slideInFromLeft(0.8)}
-      className="text-lg text-gray-400 my-5 max-w-[600px]"
-      >
-        &apos;m Full Stack Software Engineer with Experience in Web Development, App Development
-        and Software Development. Checkout my Skills and Project in different Technologies.
-      </motion.p>
-      <motion.a
-      variants={slideInFromLeft(1)}
-      className="py-2 button-primary text-center text-white cursor-pointer rounded-lg max-w-[200px]">
-        Learn More
-      </motion.a>
+        <motion.p 
+          variants={slideInFromLeft(0.8)}
+          className="text-lg text-gray-400 my-5 max-w-[600px]"
+        >
+          I&apos;m a Full Stack Software Engineer with experience in Web Development, App Development, and Software Development. Check out my skills and projects in different technologies.
+        </motion.p>
+        <motion.a
+          variants={slideInFromLeft(1)}
+          href="https://drive.google.com/file/d/1ViMLgSCXqTtEfnQyp0nOlfwR61B8ScsM/view?usp=drive_link" // Replace with your actual CV link
+          target="_blank"
+          rel="noopener noreferrer"
+          className="py-2 button-primary text-center text-white cursor-pointer rounded-lg max-w-[200px]"
+        >
+          Learn More
+        </motion.a>
       </div>
       <motion.div 
-      variants={slideInFromRight(0.8)}
-      className="w-full h-full flex justify-center items-center"
+        variants={slideInFromRight(0.8)}
+        className="w-full h-full flex justify-center items-center"
       >
         <Image 
-        src="/mainIconsdark.svg"
-        alt="Work Icons"
-        height={650}
-        width={650}
+          src="/mainIconsdark.svg"
+          alt="Work Icons"
+          height={650}
+          width={650}
         />
       </motion.div>
     </motion.div>
